@@ -1,0 +1,44 @@
+
+@import "./base/reset.scss";
+
+@import "./components/buttons";
+@import "./components/buttons";
+@import "./components/miscelaneas";
+
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/header";
+
+
+@import "./pages/contacto";
+
+
+.logo {
+  display: block;
+  width: 100%;
+  height: 57px;
+  left: 0px;
+  top: 0px;
+  border-radius: 89.5px;
+}
+
+footer{
+  width: 80%;
+}
+
+
+  /* .header:hover {
+    opacity: 1;
+    background-color: white;
+    
+  } */
+
+  /* esto era de cuando quiste hacer un hero con img tipo gif */
+  /* .hero{
+      height: 100vh;
+      width: 100%;
+      flex-grow: 100%;
+      background-image: url(https://andarcriollo.files.wordpress.com/2014/11/e5f3e5ee7dbb9394259fae38d5646adb.gif); */
+  /* } */
+
+  
