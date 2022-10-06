@@ -8,25 +8,25 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body class="body-productos">
-    <header class="header">
-        <nav class="navbar navbar-dark">
+<body class="body-productos bg-black">
+    <header class="">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid d-flex justify-content-between">
-                <div class="">
-                    <h1 class="home"> <a href="../index.html"><img src="../assets/img/LOGO carne argentina.png"
-                                alt="La mejor carniceria del país" class="logo"> </a></h1>
+                <div class="d-inline-flex">
+                    <h1 class="flex-sm-nowrap"> <a href="/index.html"><img
+                                src="../assets/img/Captura de pantalla 2022-09-28 185103.png"
+                                alt="La mejor carniceria del país" class="rounded-end"> </a></h1>
                 </div>
                 <div class="d-flex">
                     <div class="flex-row-reverse">
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-bd-primary me-2" type="submit">Buscar</button>
+                            <button class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold border-opacity-25" type="submit">Buscar</button>
                         </form>
                     </div>
-                    </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -44,20 +44,18 @@
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">Categorias</a>
                                     <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item navegador-item"
-                                                href="../pages/productos.html">Productos</a></li>
-                                        <li><a class="dropdown-item navegador-item"
-                                                href="../pages/ofertas.html">Ofertas</a></li>
+                                        <li><a class="dropdown-item navegador-item" href="productos.html">Productos</a>
+                                        </li>
+                                        <li><a class="dropdown-item navegador-item" href="ofertas.html">Ofertas</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link navegador-item" aria-current="page"
-                                        href="../pages/preguntas_frecuentes.html">Quienes somos</a>
+                                        href="preguntas_frecuentes.html">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navegador-item" href="../pages/contacto.html">Contacto</a>
+                                    <a class="nav-link navegador-item" href=".contacto.html">Contacto</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -66,36 +64,84 @@
         </nav>
     </header>
     <!-- contacto -->
-    <form action="" class="contacto">
-        <input class="form" type="text" placeholder="Nombre y Apellido">
-        <input class="form" type="email" placeholder="Mail">
-        <textarea class="form" name="consulta" id="" cols="30" rows="10"></textarea>
-        <input type="submit">
-    </form>
-    <footer class="footer">
-        <section class="row row-cols-auto justify-content-around text-bg-dark h-50">
-            <div class="card col-lg-2 text-bg-dark h-100">
-                <div class="text-center text-md-start card-body">
-                    <h5 class="card-title fs-5 text-light">Encontranos en las redes</h5>
-                    <div><a href="twitter.com.ar" class="sm-justify-content-center card-link text-blue">Twitter</a>
-                    </div>
-                    <div><a href="instragram.com.ar" class="card-link">Instagram</a></div>
-                    <div><a href="facebook.com.ar" class="card-link">Facebook</a></div>
+    <div class="row">
+
+        <div class="card col-6 mt-2 tarjeta_contenedora">
+            <div>
+                <select class="form-select mb-3 mt-4 mr-2" aria-label="Default select example">
+                    <option selected>Seleccionar</option>
+                    <option value="1">Consulta</option>
+                    <option value="2">Reclamo</option>
+                    <option value="3">Sugerencias</option>
+                </select>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre"
+                    aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido"
+                    aria-describedby="basic-addon2">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" aria-label="Mail" placeholder="Mail">
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Telefono" aria-label="Telefono">
+            </div>
+            <div class="input-group">
+                <textarea class="form-control mb-2" style="height: 150px;"
+                    aria-label="Su consulta/reclamo/sugerencias"></textarea>
+            </div>
+            <div class="text-center"><button class="btn-close-black">Enviar</button></div>
+        </div>
+        <div class="card col-6 mt-2 tarjeta_contenedora bg-dark">
+            <div class="text-white-50 bg-dark">
+                <div class="text-white border-bottom border-3 border-danger">
+                    <h3 class="fs-1">Mas Info</h3>
+                </div>
+                <div class=" border-bottom border-1 border-opacity-75 border-danger">
+                    <h4 class="text-muted mb-0">
+                        ¿Donde estamos?
+                    </h4>
+                    <p>Juncal y Billinghurst, Palermo, CABA, Argentina.</p>
+
+                </div>
+                <div class=" border-bottom border-1 border-opacity-75 border-danger">
+                    <h4 class="text-muted mb-0">
+                        Número de Telefono
+                    </h4>
+                    <p>+549 11 156-4387</p>
+                </div>
+                <div class=" border-bottom border-1 border-opacity-75 border-danger">
+                    <h4 class="text-muted mb-0">
+                        Mail
+                    </h4>
+                    <p>carne-argentina@gmail.com</p>
+
+                </div>
+               
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="footer bg-black w-100">
+        <section class="row row-cols-auto justify-content-around bg-black w-100">
+            <div class="card col-lg-6 bg-black">
+                <div class="text-start text-md-center card-body">
+                    <h5 class="card-title text-light">Encontranos en las redes</h5>
+                    <div class=""><a href="twitter.com.ar" class="text-decoration-none">Twitter</a></div>
+                    <div><a href="instragram.com.ar" class="text-decoration-none">Instagram</a></div>
+                    <div><a href="facebook.com.ar" class="text-decoration-none">Facebook</a></div>
                 </div>
             </div>
-            <div class="d-none d-md-block card col-lg-6 justify-content-center text-" bg-dark h-100">
-                <div class="card-body align-items-center">
-                    <iframe class="w-100 h-100"
+            <div class="d-none d-md-block card col-lg-6 justify-content-center bg-black h-100">
+                <div class="align-items-center mapa">
+                    <iframe class="w-100 h-100 bg-black"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.668331034103!2d-58.4074765!3d-34.587257900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82e0eb69fd%3A0x759892c218684a1d!2sJuncal%20%26%20Billinghurst%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1663333876192!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="d-none d-lg-block card col-lg-2 text-bg-dark h-100">
-                <div class="card-body">
-                    <a href="/index.html"><img src="../assets/img/LOGO carne argentina.png"
-                            alt="La mejor carniceria del país" class="logo"></a>
-                    <br>
                 </div>
             </div>
         </section>

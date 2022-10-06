@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,26 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../css/main.css">
+
 </head>
-<body class="body-productos">
-    <header class="header">
-        <nav class="navbar navbar-dark">
+
+<body class="body-productos bg-black">
+    <header class="">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid d-flex justify-content-between">
-                <div class="">
-                    <h1 class="home"> <a href="../index.html"><img src="../assets/img/LOGO carne argentina.png"
-                                alt="La mejor carniceria del país" class="logo"> </a></h1>
+                <div class="d-inline-flex">
+                    <h1 class="flex-sm-nowrap"> <a href="/index.html"><img
+                                src="../assets/img/Captura de pantalla 2022-09-28 185103.png"
+                                alt="La mejor carniceria del país" class="rounded-end"> </a></h1>
                 </div>
                 <div class="d-flex">
                     <div class="flex-row-reverse">
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-bd-primary me-2" type="submit">Buscar</button>
+                            <button class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold border-opacity-25" type="submit">Buscar</button>
                         </form>
                     </div>
-                    </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -42,20 +45,18 @@
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">Categorias</a>
                                     <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item navegador-item"
-                                                href="../pages/productos.html">Productos</a></li>
-                                        <li><a class="dropdown-item navegador-item"
-                                                href="../pages/ofertas.html">Ofertas</a></li>
+                                        <li><a class="dropdown-item navegador-item" href="productos.html">Productos</a>
+                                        </li>
+                                        <li><a class="dropdown-item navegador-item" href="ofertas.html">Ofertas</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link navegador-item" aria-current="page"
-                                        href="../pages/preguntas_frecuentes.html">Quienes somos</a>
+                                        href="preguntas_frecuentes.html">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navegador-item" href="../pages/contacto.html">Contacto</a>
+                                    <a class="nav-link navegador-item" href="contacto.html">Contacto</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -63,45 +64,93 @@
             </div>
         </nav>
     </header>
-<!-- una breve reseña de nostros -->
-    <h2>¿Quienes somos?</h2>
-    <div>
-        <h3>Historia</h3>
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div>
-        <h3>Donde estamos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-    </div>
-    <div>
-        <h3>Nuestros objetivos</h3>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-    </div>
-    
-    <footer class="footer">
-        <section class="row row-cols-auto justify-content-around text-bg-dark h-50">
-            <div class="card col-lg-2 text-bg-dark h-100">
-                <div class="text-center text-md-start card-body">
-                    <h5 class="card-title fs-5 text-light">Encontranos en las redes</h5>
-                    <div><a href="twitter.com.ar" class="sm-justify-content-center card-link text-blue">Twitter</a>
+    <!-- una breve reseña de nostros -->
+    <div class="row justify-content-between">
+        <div class="container col-lg-4 container_quienessomos">
+            <h2 class="text-white">¿Quienes somos?</h2>
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                Ver más
+            </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px;">
+                        <div>
+                            <p>
+                                Somos un grupo de amigos amantes del asado, creamos este sitio de encuentro para que
+                                todos puedan elegir
+                                desde la comodidad de sus hogares los productos protagonistas del compartir!
+                            </p>
+                        </div>
                     </div>
-                    <div><a href="instragram.com.ar" class="card-link">Instagram</a></div>
-                    <div><a href="facebook.com.ar" class="card-link">Facebook</a></div>
                 </div>
             </div>
-            <div class="d-none d-md-block card col-lg-6 justify-content-center text-" bg-dark h-100">
-                <div class="card-body align-items-center">
-                    <iframe class="w-100 h-100"
+        </div>
+        <div class="container col-lg-4 container_dondeestamos">
+            <h2 class="text-white">¿Donde estamos?</h2>
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+                Ver más
+            </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample1">
+                    <div class="card card-body" style="width: 300px;">
+                        <div>
+                            <p>
+                                Somos un grupo de amigos amantes del asado, creamos este sitio de encuentro para que
+                                todos puedan elegir
+                                desde la comodidad de sus hogares los productos protagonistas del compartir!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container col-lg-4 container_nuestrosbjetivos">
+            <h2 class="text-white">Nuestros objetivos</h2>
+            <button class="btn btn-outline-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+                Ver más
+            </button>
+            </p>
+            <div style="min-height: 120px;">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                    <div class="card card-body" style="width: 300px;">
+                        <div>
+                            <p>
+                                Somos un grupo de amigos amantes del asado, creamos este sitio de encuentro para que
+                                todos puedan elegir
+                                desde la comodidad de sus hogares los productos protagonistas del compartir!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <footer class="footer bg-black w-100 position-fixed bottom-0">
+        <section class="row row-cols-auto justify-content-around bg-black w-100">
+            <div class="card col-lg-6 bg-black">
+                <div class="text-start text-md-center card-body">
+                    <h5 class="card-title text-light">Encontranos en las redes</h5>
+                    <div class=""><a href="twitter.com.ar" class="text-decoration-none">Twitter</a></div>
+                    <div><a href="instragram.com.ar" class="text-decoration-none">Instagram</a></div>
+                    <div><a href="facebook.com.ar" class="text-decoration-none">Facebook</a></div>
+                </div>
+            </div>
+            <div class="d-none d-md-block card col-lg-6 justify-content-center bg-black h-100">
+                <div class="align-items-center mapa">
+                    <iframe class="w-100 h-100 bg-black"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.668331034103!2d-58.4074765!3d-34.587257900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82e0eb69fd%3A0x759892c218684a1d!2sJuncal%20%26%20Billinghurst%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1663333876192!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="d-none d-lg-block card col-lg-2 text-bg-dark h-100">
-                <div class="card-body">
-                    <a href="/index.html"><img src="../assets/img/LOGO carne argentina.png"
-                            alt="La mejor carniceria del país" class="logo"></a>
-                    <br>
                 </div>
             </div>
         </section>
@@ -110,4 +159,5 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 </body>
+
 </html>

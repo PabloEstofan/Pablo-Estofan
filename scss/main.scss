@@ -1,16 +1,16 @@
 
 @import "./base/reset.scss";
 
-@import "./components/buttons";
-@import "./components/buttons";
+@import "./components/buttons.scss";
+@import "./components/buttons.scss";
 @import "./components/miscelaneas";
+@import "./components/tarjetas";
 
 @import "./layout/body";
 @import "./layout/footer";
 @import "./layout/header";
 
-
-@import "./pages/contacto";
+@import "./pages/preguntas_frecuentes.scss";
 
 
 .logo {
@@ -26,7 +26,13 @@ footer{
   width: 80%;
 }
 
-
+.navegador-item{
+    color: brown;
+    text-decoration: none;
+}
+.subtitulo-hero{
+  color: brown;
+}
   /* .header:hover {
     opacity: 1;
     background-color: white;

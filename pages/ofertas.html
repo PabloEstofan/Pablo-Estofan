@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="../css/main.css">
 </head>
-<body class="body-productos">
-    <header class="header">
-        <nav class="navbar navbar-dark">
+<body class="body-productos bg-black">
+    <header class="">
+        <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid d-flex justify-content-between">
-                <div class="">
-                    <h1 class="home"> <a href="../index.html"><img src="../assets/img/LOGO carne argentina.png"
-                                alt="La mejor carniceria del país" class="logo"> </a></h1>
+                <div class="d-inline-flex">
+                    <h1 class="flex-sm-nowrap"> <a href="/index.html"><img
+                                src="../assets/img/Captura de pantalla 2022-09-28 185103.png"
+                                alt="La mejor carniceria del país" class="rounded-end"> </a></h1>
                 </div>
                 <div class="d-flex">
                     <div class="flex-row-reverse">
                         <form class="d-flex" role="search">
                             <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                            <button class="btn btn-bd-primary me-2" type="submit">Buscar</button>
+                            <button class="btn btn-outline-light btn-lg px-4 me-sm-3 fw-bold border-opacity-25" type="submit">Buscar</button>
                         </form>
                     </div>
-                    </form>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="navbar-toggler-icon"></span>
@@ -42,19 +42,18 @@
                                         aria-expanded="false">Categorias</a>
                                     <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item navegador-item"
-                                                href="../pages/productos.html">Productos</a></li>
+                                                href="/pages/productos.html">Productos</a></li>
                                         <li><a class="dropdown-item navegador-item"
-                                                href="../pages/ofertas.html">Ofertas</a></li>
+                                                href="/pages/ofertas.html">Ofertas</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link navegador-item" aria-current="page"
-                                        href="../pages/preguntas_frecuentes.html">Quienes somos</a>
+                                        href="/pages/preguntas_frecuentes.html">Quienes somos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link navegador-item" href="../pages/contacto.html">Contacto</a>
+                                    <a class="nav-link navegador-item" href="/pages/contacto.html">Contacto</a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
@@ -62,36 +61,62 @@
             </div>
         </nav>
     </header>
-    <!-- Aca es donde van a ir las ofertas, similares al diseño de los productos -->
-    <div>
-        <img src="/Assets/img/mix de carne.webp" alt="oferta">
-        <p>Lorem ipsum dolor sit amet.</p>
-    </div>
- 
-    <footer class="footer">
-        <section class="row row-cols-auto justify-content-around text-bg-dark h-50">
-            <div class="card col-lg-2 text-bg-dark h-100">
-                <div class="text-center text-md-start card-body">
-                    <h5 class="card-title fs-5 text-light">Encontranos en las redes</h5>
-                    <div><a href="twitter.com.ar" class="sm-justify-content-center card-link text-blue">Twitter</a>
+    <section class="d-sm-inline-flex flex-sm-column w-100 mt-5 bg-black align-items-center">
+        <div class="card mb-3 m-5 shadow-lg rounded-3 w-75 border border-dark border-5 p-2 mb-2 border-opacity-75">
+            <div class="row md-column justify-content-md-around">
+                <div class="col-md-4 text-center">
+                    <img src="../assets/img/1comboasado1.png" class="img-fluid w-100" alt="Combo de asado regular">
+                </div>
+                <div class="col-md-auto">
+                    <div class="card-body text-md-end text-sm-center">
+                        <h5 class="card-title">Combo de asado:</h5>
+                        <p>Matambrito + Tapita de Asado + Costillita de vaca</p>
+                        <p class="card-text">1400$/kg.</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">gr</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Añadir</a>
                     </div>
-                    <div><a href="instragram.com.ar" class="card-link">Instagram</a></div>
-                    <div><a href="facebook.com.ar" class="card-link">Facebook</a></div>
                 </div>
             </div>
-            <div class="d-none d-md-block card col-lg-6 justify-content-center text-" bg-dark h-100">
-                <div class="card-body align-items-center">
-                    <iframe class="w-100 h-100"
+        </div>
+        <div class="card mb-3 m-5 shadow-lg rounded-3 w-75 border border-dark border-5 p-2 mb-2 border-opacity-75">
+            <div class="row md-column justify-content-md-around">
+                <div class="col-md-4 text-center">
+                    <img src="../assets/img/1Comboasado2.png" class="img-fluid w-100" alt="Combo de asado premium">
+                </div>
+                <div class="col-md-auto">
+                    <div class="card-body text-md-end text-sm-center">
+                        <h5 class="card-title">Combo de asado dominguero</h5>
+                        <p>Costillita + Pollo + Costeletas de Vaca + Carne Picada</p>
+                        <p class="card-text">1500$/kg.</p>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">gr</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-black w-100">
+        <section class="row row-cols-auto justify-content-around bg-black w-100">
+            <div class="card col-lg-6 bg-black">
+                <div class="text-start text-md-center card-body">
+                    <h5 class="card-title text-light">Encontranos en las redes</h5>
+                    <div class=""><a href="twitter.com.ar" class="text-decoration-none">Twitter</a></div>
+                    <div><a href="instragram.com.ar" class="text-decoration-none">Instagram</a></div>
+                    <div><a href="facebook.com.ar" class="text-decoration-none">Facebook</a></div>
+                </div>
+            </div>
+            <div class="d-none d-md-block card col-lg-6 justify-content-center bg-black h-100">
+                <div class="align-items-center mapa">
+                    <iframe class="w-100 h-100 bg-black"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.668331034103!2d-58.4074765!3d-34.587257900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca82e0eb69fd%3A0x759892c218684a1d!2sJuncal%20%26%20Billinghurst%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1663333876192!5m2!1ses-419!2sar"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="d-none d-lg-block card col-lg-2 text-bg-dark h-100">
-                <div class="card-body">
-                    <a href="/index.html"><img src="../assets/img/LOGO carne argentina.png"
-                            alt="La mejor carniceria del país" class="logo"></a>
-                    <br>
                 </div>
             </div>
         </section>
@@ -100,4 +125,5 @@
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
